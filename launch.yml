@@ -2,7 +2,7 @@
 - name: Launch installation and config
   hosts: all:!localhost
   become: yes
-  become_user: admin
+  become_user: root
   roles:
     - install_lamp
     - config_lamp
