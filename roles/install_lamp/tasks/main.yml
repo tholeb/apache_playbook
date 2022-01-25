@@ -1,0 +1,12 @@
+---
+# tasks/main.yml
+- name: Upgrade the OS and apps (apt-get dist-upgrade)
+  apt:
+    update_cache: yes
+    autoclean: yes
+    upgrade: "yes"
+    autoremove: yes
+    cache_valid_time: 86400
+
+- include_tasks: inst.yml
+  when: ansible_distribution == "Debian"

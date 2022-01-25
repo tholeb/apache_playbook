@@ -1,0 +1,7 @@
+---
+- name: Install apt packages
+  apt:
+    pkg: "{{ packages }}"
+    state: latest
+    update_cache: yes
+    autoremove: yes
