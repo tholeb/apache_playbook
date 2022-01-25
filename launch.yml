@@ -1,0 +1,8 @@
+---
+- name: Launch installation and config
+  hosts: all:!localhost
+  become: yes
+  become_user: admin
+  roles:
+    - install_lamp
+    - config_lamp
