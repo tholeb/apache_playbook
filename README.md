@@ -2,4 +2,4 @@
 
 ## How to launch
 
-`ansible-playbook -i "example.com", ./launch.yml -u $USER`
+`ansible-playbook -i "example.com", ./launch.yml -u $USER -kK`
